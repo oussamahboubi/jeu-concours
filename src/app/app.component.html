@@ -1,13 +1,13 @@
 
-<h3>Appuyez sur la roue pour estimer la durée restante pour terminer le projet Medly!</h3>
+<h3><b>Appuyez sur la roue pour estimer la durée restante pour terminer le projet Medly!</b></h3>
 <ngx-wheel
   #wheel
   width='400'
   height='400'
   spinDuration='8'
   [items]='items'
-  [innerRadius]='20'
-  [spinAmount]='10'
+  [innerRadius]='0'
+  [spinAmount]='5'
   [textOrientation]='textOrientation'
   [textAlignment]='textAlignment'
   pointerStrokeColor='black'
@@ -17,7 +17,7 @@
   (onSpinComplete)='after()'
 ></ngx-wheel>
 <div>
-  <button class="reset" (click)="reset()">Recommencer</button>
+  <button class="reset" (click)="reset()"><b>Recommencer</b></button>
 </div>
 <!--<div class="buttons">
   <button (click)="spin(0)">1 Mois</button>
